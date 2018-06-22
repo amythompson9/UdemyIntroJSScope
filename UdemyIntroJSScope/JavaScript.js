@@ -35,3 +35,18 @@ function bye() {
 
 //this is happening becausee name is not accessible outside
 //the hi()
+
+//using set interval function
+function sing() {
+    console.log("twinkle, twinkle...");
+    console.log("how I wonder...");
+}
+//setInterval(anotherFunc, interval)
+setInterval(sing, 1000);
+
+//clearInterval();
+
+setInterval(function () {
+    console.log("I am an anonymous function!");
+    console.log("This is awesome!");
+}, 2000)
